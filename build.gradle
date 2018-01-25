@@ -32,6 +32,8 @@ dependencies {
 	compile 'org.apache.tomcat:tomcat-dbcp:8.0.30'
 	//spring boot security
 	compile 'org.springframework.boot:spring-boot-starter-security'
+	//thymeleaf security
+	compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity4:2.1.2.RELEASE'
 	runtime 'com.h2database:h2'
     runtime 'javax.transaction:jta:1.1'
     runtime 'org.aspectj:aspectjweaver:1.8.7'

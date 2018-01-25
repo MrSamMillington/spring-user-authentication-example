@@ -42,6 +42,14 @@ public class User implements UserDetails {
         return authorities;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
     @Override
     public String getPassword() {
         return password;

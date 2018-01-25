@@ -14,4 +14,8 @@ import java.util.List;
 public interface TaskDao extends CrudRepository<Task, Long> {
     //extends to CrudRepository and enable spring data data source -> creates the implementation for you.
     //needs smart naming like findByDescription
+
+    //JPQL java persistant query language
+    @Query("select t from Task t where t.user.id=:#{principal.id}")
+    List<Task> findAll();
 }

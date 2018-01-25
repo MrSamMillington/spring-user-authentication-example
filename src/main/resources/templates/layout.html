@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head th:fragment="head" lang="en">
     <meta charset="UTF-8"/>
     <meta description="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,7 +16,7 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">TodoToday</a>
             <ul class="right">
-                <li sec:authentication="name"></li>
+                <li sec:authentication="name"></li> <!-- bascially does the same as using principal.name-->
                 <li>
                     <form class="logout inline" th:action="@{/logout}" method="post">
                         <button type="submit"><i class="material-icons">power_settings_new</i></button>
